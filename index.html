@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali - Frontend Developer</title>
+    <meta name="description" content="Frontend Developer specializing in HTML, CSS, JavaScript, and Luau for Roblox development. Creating modern web experiences and interactive games.">
+    <meta name="author" content="Ali Kimara">
+    <meta name="keywords" content="Frontend Developer, Web Developer, Roblox Scripter, HTML, CSS, JavaScript, Luau, Portfolio">
+    
+    <meta property="og:title" content="Ali Kimara - Frontend Developer & Roblox Scripter">
+    <meta property="og:description" content="Frontend Developer specializing in HTML, CSS, JavaScript, and Luau for Roblox development. Creating modern web experiences and interactive games.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Ali</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-cta" onclick="scrollToSection('contact')">Let's Talk</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Hi, It's Ali!</h1>
+                <h2 class="hero-subtitle slide-up">Frontend Developer</h2>
+                <p class="hero-description slide-up">
+                    Passionate 14-year-old developer creating engaging web experiences and cybersecurity. 
+                    I bring creativity and technical expertise to every project, focusing on clean code, beautiful user interfaces, and meaningful impact.
+                </p>
+                
+                <div class="hero-buttons slide-up">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        View My Work
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 7h10v10M7 17L17 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" onclick="scrollToSection('about')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know the developer behind the code</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Ali, a 14-year-old self-taught developer with a passion for creating things that live on the internet. My journey in web development started 4 years ago when I discovered W3Schools and began learning HTML and CSS on my mobile phone, before I even had a laptop!</p>
+                    
+                    <p>What began as curiosity quickly turned into a passion as I fell in love with the process of building websites and seeing my code come to life. I've since expanded my skills to include Python (Currently learning.), cybersecurity (Currently learning.) and Lua. I am always eager to learn new technologies and improve my craft.</p>
+                    
+                    <p>When I'm not coding, you can find me exploring cybersecurity concepts or learning other programming languages. I believe in using technology to solve real-world problems and make a positive impact.</p>
+                    
+                    <p>Despite my young age, I take my work seriously and I am constantly pushing myself to grow as a developer. Every project is an opportunity to learn something new and improve my skills.</p>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">HTML & CSS</h3>
+                    <p class="skill-description">Semantic markup and modern styling with responsive design principles</p>
+                    <span class="skill-level">Advanced</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">JavaScript</h3>
+                    <p class="skill-description">Interactive functionality and dynamic web experiences</p>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Luau (Roblox)</h3>
+                    <p class="skill-description">Game scripting and interactive experiences in Roblox Studio</p>
+                    <span class="skill-level">Advanced</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M8 21l4-7 4 7"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Creating intuitive and visually appealing user interfaces</p>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3 class="tools-title">Tools & Technologies</h3>
+                <div class="tools-list">
+                    <span class="tool-tag">VS Code</span>
+                    <span class="tool-tag">Roblox Studio</span>
+                    <span class="tool-tag">Visual Studio</span>
+                    <span class="tool-tag">Git</span>
+                    <span class="tool-tag">Chrome DevTools</span>
+                    <span class="tool-tag">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+     <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my work in web development, waste management solutions, and rare disease advocacy</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Ali Portfolio</h3>
+                        <span class="project-badge">New</span>
+                    </div>
+                    <p class="project-description">
+                        My personal portfolio website showcasing my skills, projects, and contact information.
+                        Built with modern HTML, CSS, and JavaScript with smooth animations and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Netlify</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://alideveloper.netlify.app/#" target="_blank" class="btn btn-primary">
+                            View Live
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 7h10v10M7 17L17 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Taka Kimara Waste Management</h3>
+                        <span class="project-badge">Featured</span>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive platform providing expert waste management advice and guidance on where to source quality waste management tools. 
+                        Helps individuals and businesses implement effective waste reduction strategies and find reliable suppliers.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Odoo</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://takakimara.odoo.com" target="_blank" class="btn btn-primary">
+                            View Live
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 7h10v10M7 17L17 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Ali Kimara Rare Disease Foundation</h3>
+                        <span class="project-badge">Featured</span>
+                    </div>
+                    <p class="project-description">
+                        Digital platform for the Ali Kimara Rare Disease Foundation (AKRDF), dedicated to supporting individuals and families affected by rare diseases. 
+                        Provides resources, advocacy, awareness campaigns, and connects patients with medical specialists and support networks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Odoo</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://akrdf1.odoo.com" target="_blank" class="btn btn-primary">
+                            View Live
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 7h10v10M7 17L17 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-footer">
+            <p>More projects coming soon! Follow my journey as I continue building amazing experiences.</p>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    Have a project in mind? I'd love to hear from you and discuss how we can bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Get In Touch</h3>
+                    <p class="contact-info-description">
+                        I'm always excited to work on new projects and collaborate with fellow developers and creators. 
+                        Whether you need help with web development, have an idea for a Roblox experience, or want to discuss meaningful projects that make a difference, let's connect!
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-method-content">
+                                <h4>Email</h4>
+                                <a href="mailto:alikimara10@gmail.com">alikimara10@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h3 class="contact-form-title">Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    © 2025 Ali. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
